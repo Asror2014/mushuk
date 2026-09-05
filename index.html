@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mushuklar Olami — mushuklar haqida qiziqarli va foydali sayt">
+  <title>Mushuklar Olami 🐱</title>
+
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      🐱 <span>Mushuklar Olami</span>
+    </div>
+
+    <button class="theme-btn" id="themeBtn">🌙</button>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="small-title">🐾 Mushuklar dunyosiga xush kelibsiz</p>
+
+      <h1>
+        Mushuklar <span>Olami</span>
+      </h1>
+
+      <p class="hero-text">
+        Eng yoqimli, qiziqarli va sirli mushuklar haqida
+        ma'lumotlarni bir joydan toping.
+      </p>
+
+      <button class="main-btn" id="catsBtn">
+        Mushuklarni ko‘rish 🐱
+      </button>
+    </div>
+
+    <div class="hero-cat">
+      <div class="cat-circle">🐈</div>
+    </div>
+  </section>
+
+
+  <!-- STATISTICS -->
+  <section class="stats">
+    <div class="stat-card">
+      <strong>25+</strong>
+      <span>Mushuk zoti</span>
+    </div>
+
+    <div class="stat-card">
+      <strong>50+</strong>
+      <span>Qiziqarli fakt</span>
+    </div>
+
+    <div class="stat-card">
+      <strong>100+</strong>
+      <span>Mushuk rasmi</span>
+    </div>
+  </section>
+
+
+  <!-- BREEDS -->
+  <section class="section" id="breeds">
+
+    <div class="section-title">
+      <p>🐾 Bizning mushuklar</p>
+      <h2>Mashhur mushuk zotlari</h2>
+    </div>
+
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <span>🔎</span>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Mushuk qidirish..."
+      >
+    </div>
+
+
+    <!-- FILTER -->
+    <div class="filters">
+      <button class="filter active" data-filter="all">
+        Barchasi
+      </button>
+
+      <button class="filter" data-filter="small">
+        Kichik
+      </button>
+
+      <button class="filter" data-filter="big">
+        Katta
+      </button>
+
+      <button class="filter" data-filter="cute">
+        Yoqimtoy
+      </button>
+    </div>
+
+
+    <!-- CAT CARDS -->
+    <div class="cats-grid" id="catsGrid">
+
+      <article class="cat-card" data-category="cute">
+        <div class="cat-image siam">
+          🐱
+        </div>
+
+        <div class="cat-info">
+          <div class="cat-name">
+            <h3>Siam</h3>
+            <button class="favorite">♡</button>
+          </div>
+
+          <p>
+            Aqlli va juda faol mushuk zoti.
+          </p>
+
+          <div class="tags">
+            <span>Yoqimtoy</span>
+            <span>Faol</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="cat-card" data-category="big">
+        <div class="cat-image maine">
+          🦁
+        </div>
+
+        <div class="cat-info">
+          <div class="cat-name">
+            <h3>Maine Coon</h3>
+            <button class="favorite">♡</button>
+          </div>
+
+          <p>
+            Dunyoning eng katta uy mushuklaridan biri.
+          </p>
+
+          <div class="tags">
+            <span>Katta</span>
+            <span>Do‘stona</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="cat-card" data-category="cute">
+        <div class="cat-image persian">
+          😺
+        </div>
+
+        <div class="cat-info">
+          <div class="cat-name">
+            <h3>Persian</h3>
+            <button class="favorite">♡</button>
+          </div>
+
+          <p>
+            Uzun junli va sokin xarakterli mushuk.
+          </p>
+
+          <div class="tags">
+            <span>Yoqimtoy</span>
+            <span>Sokin</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="cat-card" data-category="small">
+        <div class="cat-image scottish">
+          😸
+        </div>
+
+        <div class="cat-info">
+          <div class="cat-name">
+            <h3>Scottish Fold</h3>
+            <button class="favorite">♡</button>
+          </div>
+
+          <p>
+            Quloqlari bukilgan mashhur mushuk.
+          </p>
+
+          <div class="tags">
+            <span>Kichik</span>
+            <span>Mehribon</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="cat-card" data-category="big">
+        <div class="cat-image bengal">
+          🐯
+        </div>
+
+        <div class="cat-info">
+          <div class="cat-name">
+            <h3>Bengal</h3>
+            <button class="favorite">♡</button>
+          </div>
+
+          <p>
+            Yovvoyi ko‘rinishga ega faol mushuk.
+          </p>
+
+          <div class="tags">
+            <span>Katta</span>
+            <span>Faol</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="cat-card" data-category="cute">
+        <div class="cat-image ragdoll">
+          😻
+        </div>
+
+        <div class="cat-info">
+          <div class="cat-name">
+            <h3>Ragdoll</h3>
+            <button class="favorite">♡</button>
+          </div>
+
+          <p>
+            Juda mehribon va sokin mushuk.
+          </p>
+
+          <div class="tags">
+            <span>Yoqimtoy</span>
+            <span>Sokin</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- RANDOM CAT -->
+  <section class="random-section">
+
+    <div class="section-title">
+      <p>🎲 Omadingizni sinang</p>
+      <h2>Tasodifiy mushuk</h2>
+    </div>
+
+    <div class="random-card">
+
+      <div class="random-icon" id="randomIcon">
+        🐱
+      </div>
+
+      <h3 id="randomName">
+        Tasodifiy mushuk
+      </h3>
+
+      <p id="randomText">
+        Tugmani bosing va bugungi mushugingizni toping!
+      </p>
+
+      <button class="main-btn" id="randomBtn">
+        Mushukni tanlash 🎲
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- FACT -->
+  <section class="fact-section">
+
+    <div class="section-title">
+      <p>🧠 Bilasizmi?</p>
+      <h2>Qiziqarli fakt</h2>
+    </div>
+
+    <div class="fact-card">
+      <div class="fact-icon">🐾</div>
+
+      <p id="factText">
+        Mushuklar kuniga taxminan 12–16 soat uxlashi mumkin.
+      </p>
+
+      <button class="outline-btn" id="factBtn">
+        Yana fakt 🔄
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- AGE CALCULATOR -->
+  <section class="calculator">
+
+    <div class="section-title">
+      <p>🧮 Hisoblagich</p>
+      <h2>Mushuk yoshini hisoblash</h2>
+    </div>
+
+    <div class="calculator-card">
+
+      <label for="catAge">
+        Mushuk yoshini kiriting:
+      </label>
+
+      <input
+        type="number"
+        id="catAge"
+        placeholder="Masalan: 3"
+        min="1"
+      >
+
+      <button class="main-btn" id="calculateBtn">
+        Hisoblash
+      </button>
+
+      <div class="result" id="ageResult">
+        Natija shu yerda chiqadi 🐱
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAVORITES -->
+  <section class="favorites-section">
+
+    <div class="section-title">
+      <p>❤️ Siz tanlaganlar</p>
+      <h2>Sevimli mushuklar</h2>
+    </div>
+
+    <div class="favorite-counter">
+      ❤️ Sevimlilar:
+      <strong id="favoriteCount">0</strong>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-logo">
+      🐱 Mushuklar Olami
+    </div>
+
+    <p>
+      Mushuklarni sevuvchilar uchun yaratilgan sayt ❤️
+    </p>
+
+    <div class="footer-paws">
+      🐾 🐾 🐾
+    </div>
+
+    <small>
+      © 2026 Mushuklar Olami
+    </small>
+
+  </footer>
+
+
+  <script src="js.js"></script>
+
+</body>
+</html>
